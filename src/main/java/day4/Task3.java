@@ -65,6 +65,6 @@ public class Task3 {
         }
 
         System.out.println("Индекс строки с наибольшим значением " + index);
-        
+
     }
 }
