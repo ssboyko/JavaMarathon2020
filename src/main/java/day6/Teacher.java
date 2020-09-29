@@ -12,21 +12,23 @@ public class Teacher {
     public void evaluate(Student student, int mark) {
         String rating = "";
 
+        String evaluation = "";
         switch (mark) {
             case (5):
-                System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() + " по предмету " + this.subject + " на оценку отлично");
+                evaluation = "отлично";
                 break;
             case (4):
-                System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() + " по предмету " + this.subject + " на оценку хорошо");
+                evaluation =  "хорошо";
                 break;
             case (3):
-                System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() + " по предмету " + this.subject + " на оценку удовлетворительно");
+                evaluation = "удовлетворительно";
                 break;
             case (2):
-                System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() + " по предмету " + this.subject + " на оценку неудовлетворительно");
+                evaluation = "неудовлетворительно";
                 break;
             default:
                 System.out.println("Неправильная оценка");
         }
+        System.out.println("Преподаватель " + this.name + " оценил студента с именем " + student.getName() + " по предмету " + this.subject + " на оценку " + evaluation);
     }
 }
