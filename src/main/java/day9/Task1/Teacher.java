@@ -3,7 +3,7 @@ package day9.Task1;
 public class Teacher extends Human {
     private String subject;
 
-    public String getSubject() {
+    public String getSubjectName() {
         return subject;
     }
 
@@ -18,7 +18,7 @@ public class Teacher extends Human {
 
     @Override
     public void printInfo (){
-        System.out.println("Это человек с именем " + super.getName());
+        System.out.println("Этот человек с именем " + super.getName());
         System.out.println("Этот преподаватель с именем " + getName());
     }
 }

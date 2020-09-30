@@ -5,8 +5,8 @@ public class Task1 {
         Student student = new Student("Вася", "ИТ21А");
         Teacher teacher = new Teacher("Василий Иванович", "Дискретная математика");
 
-        System.out.println(student.getGroup());
-        System.out.println(teacher.getSubject());
+        System.out.println(student.getGroupName());
+        System.out.println(teacher.getSubjectName());
         student.printInfo();
         teacher.printInfo();
     }

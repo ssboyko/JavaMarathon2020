@@ -1,7 +1,7 @@
 //package Tests.day9.Task2;
 //
 //import Tests.AbstractTest;
-//import day9.Task2.TestFigures;
+//import day9.Task2.*;
 //import org.junit.jupiter.api.BeforeEach;
 //import org.junit.jupiter.api.Test;
 //

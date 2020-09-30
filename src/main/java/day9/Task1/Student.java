@@ -3,7 +3,7 @@ package day9.Task1;
 public class Student extends Human {
     private String group;
 
-    public String getGroup() {
+    public String getGroupName() {
         return group;
     }
 
@@ -18,7 +18,7 @@ public class Student extends Human {
 
     @Override
     public void printInfo (){
-        System.out.println("Это человек с именем " + super.getName());
+        System.out.println("Этот человек с именем " + super.getName());
         System.out.println("Этот студент с именем " + getName());
     }
 
