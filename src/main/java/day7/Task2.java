@@ -9,8 +9,9 @@ public class Task2 {
         Player player5 = new Player();
         Player player6 = new Player();
 
-        for (int i = 0; i < Player.MAX_STAMINA; i++) {
-            Player.run(player1);
+        int x = player1.getStamina();
+        for (int i = 0; i < x; i++) {
+            player1.run();
         }
 
         Player.info();

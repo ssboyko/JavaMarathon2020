@@ -23,7 +23,7 @@ public class Task1 {
         String a;
         long start2 = System.currentTimeMillis();
         for (int i = 0; i < 20001; i++) {
-            a = Integer.toString(i) + " ";
+            a = i + " ";
             System.out.print(a);
         }
         long finish2 = System.currentTimeMillis();

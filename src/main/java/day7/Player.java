@@ -14,8 +14,8 @@ public class Player {
     }
 
     public Player() {
+        this.stamina = 90 + random.nextInt(MAX_STAMINA - 90 + 1);
         if (countPlayers < 6) {
-            this.stamina = 90 + random.nextInt(MAX_STAMINA - 90 + 1);
             countPlayers++;
         } else {
             System.out.println("Создано достаточно игроков для игры на поле");
@@ -23,13 +23,15 @@ public class Player {
 
     }
 
-    public static void run(Player player) {
-        if (player.stamina == MIN_STAMINA) {
+    public void run() {
+        if (this.stamina == MIN_STAMINA) {
+            return;
+        }
+        this.stamina -= 1;
+        if (this.stamina == MIN_STAMINA){
             System.out.println("Я устал, мне нужна замена, ухожу с поля");
             countPlayers--;
         }
-        player.stamina -= 1;
-
     }
 
     public static void info() {
