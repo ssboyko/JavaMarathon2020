@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 public class MusicBand {
     private String name;
     private int year;
-    private List<MusicArtist> bandMembers = new ArrayList<>();
+    private List<MusicArtist> bandMembers;
 
     public MusicBand() {
 
@@ -55,7 +55,11 @@ public class MusicBand {
     }
 
     public static void transferMembers(MusicBand bandA, MusicBand bandB) {
-        bandB.bandMembers = Stream.concat(bandA.bandMembers.stream(), bandB.bandMembers.stream()).collect(Collectors.toList());
+        //bandB.bandMembers = Stream.concat(bandA.bandMembers.stream(), bandB.bandMembers.stream()).collect(Collectors.toList());
+        for (MusicArtist musicArtist : bandA.getBandMembers()){
+            bandB.getBandMembers().add(musicArtist);
+        }
+
         bandA.bandMembers.clear();
         //bandA.getBandMembers().removeAll(bandA.getBandMembers());
     }
