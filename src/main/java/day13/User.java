@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Objects;
 
 public class User {
-    String username;
-    List<User> subscriptions;
+    private String username;
+    private List<User> subscriptions;
 
     public User(String username) {
         this.username = username;

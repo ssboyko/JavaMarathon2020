@@ -20,11 +20,11 @@ public class MessageDatabase {
     //- этот метод должен вывести цепочку сообщений (диалог) пользователей u1 и u2. Формат вывода должен быть таким:
     public static void showDialog(User u1, User u2) {
         for (Message message : messages) {
-            if (u1.equals(message.sender) && (u2.equals(message.receiver))) {
-                System.out.println(message.sender + ": " + message.text);
+            if (u1.equals(message.getSender()) && (u2.equals(message.getReceiver()))) {
+                System.out.println(message.getSender() + ": " + message.getText());
             }
-            if (u2.equals(message.sender) && u1.equals(message.receiver)) {
-                System.out.println(message.sender + ": " + message.text);
+            if (u2.equals(message.getSender()) && u1.equals(message.getReceiver())) {
+                System.out.println(message.getSender() + ": " + message.getText());
             }
         }
     }
